@@ -18,12 +18,12 @@ To use these favicons, add the following lines to the `<head>` section of your H
 
 ## 📁 Files
 
-| File | Purpose |
+| File | Purpose | 
 |---|---|
-| `android-chrome-192x192.png` | Favicon for Android Chrome (192x192) |
-| `android-chrome-512x512.png` | Favicon for Android Chrome (512x512) |
-| `apple-touch-icon.png` | Apple touch icon |
-| `favicon-16x16.png` | Favicon for standard browsers (16x16) |
-| `favicon-32x32.png` | Favicon for standard browsers (32x32) |
-| `favicon.ico` | Favicon for legacy browsers |
+| `android-chrome-192x192.png` | Favicon for Android Chrome (192x192) | https://raw.githubusercontent.com/melbinjp/favicon/refs/heads/master/android-chrome-192x192.png
+| `android-chrome-512x512.png` | Favicon for Android Chrome (512x512) | https://raw.githubusercontent.com/melbinjp/favicon/1967529718ad7ffa28c59dde00b1dec8511732d3/android-chrome-512x512.png
+| `apple-touch-icon.png` | Apple touch icon | https://raw.githubusercontent.com/melbinjp/favicon/1967529718ad7ffa28c59dde00b1dec8511732d3/apple-touch-icon.png
+| `favicon-16x16.png` | Favicon for standard browsers (16x16) | https://raw.githubusercontent.com/melbinjp/favicon/1967529718ad7ffa28c59dde00b1dec8511732d3/favicon-16x16.png
+| `favicon-32x32.png` | Favicon for standard browsers (32x32) | https://raw.githubusercontent.com/melbinjp/favicon/1967529718ad7ffa28c59dde00b1dec8511732d3/favicon-32x32.png
+| `favicon.ico` | Favicon for legacy browsers | https://raw.githubusercontent.com/melbinjp/favicon/1967529718ad7ffa28c59dde00b1dec8511732d3/favicon.ico
 | `site.webmanifest` | Web app manifest |
