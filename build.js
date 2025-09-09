@@ -50,12 +50,18 @@ const run = async () => {
       )
     );
 
+    // Copy source SVG to destination
+    await fs.copyFile(source, path.join(destination, "favicon.svg"));
+
     // Create favicons.json
     const faviconsJson = {
       ...response,
       // The 'contents' properties are large buffers, so we'll exclude them
       images: response.images.map(({ name, contents, ...rest }) => ({ name, ...rest })),
-      files: response.files.map(({ name, contents, ...rest }) => ({ name, ...rest })),
+      files: [
+        ...response.files.map(({ name, contents, ...rest }) => ({ name, ...rest })),
+        { name: "favicon.svg", purpose: "Primary SVG favicon for modern browsers." }
+      ],
     };
     await fs.writeFile(
       path.join(destination, "favicons.json"),
