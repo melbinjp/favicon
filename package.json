@@ -1,0 +1,26 @@
+{
+  "name": "app",
+  "version": "1.0.0",
+  "description": "This repository contains the favicon assets for my awesome website.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "node build.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/melbinjp/favicon.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/melbinjp/favicon/issues"
+  },
+  "homepage": "https://github.com/melbinjp/favicon#readme",
+  "dependencies": {
+    "favicons": "6.2.2",
+    "fs-extra": "^11.3.1"
+  }
+}
