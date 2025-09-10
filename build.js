@@ -19,14 +19,14 @@ const configuration = {
   scope: "/",
   start_url: "/",
   version: "1.0",
-  logging: true,
+  logging: false,
   icons: {
     android: true,
     appleIcon: true,
-    appleStartup: false,
+    appleStartup: true,
     favicons: true,
     windows: true,
-    yandex: false,
+    yandex: true,
   },
 };
 
