@@ -24,6 +24,9 @@ jobs:
       - name: Build favicons
         run: npm run build
 
+      - name: Copy README to dist
+        run: cp README.md dist/
+
       - name: Commit changes
         uses: stefanzweifel/git-auto-commit-action@v4
         with:

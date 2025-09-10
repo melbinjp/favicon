@@ -1,0 +1,7 @@
+{
+  "name": "Favicon Assets",
+  "description": "A repository of favicon assets, generated from a single SVG file.",
+  "homepage": "https://github.com/melbinjp/favicon",
+  "files": [],
+  "favicons_manifest": "/favicons.json"
+}

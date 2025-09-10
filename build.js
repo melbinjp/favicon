@@ -65,6 +65,14 @@ const run = async () => {
       JSON.stringify(faviconsJson, null, 2)
     );
 
+    // Create manifest.json
+    const manifestTemplate = await fs.readJson("manifest.json");
+    manifestTemplate.files = response.images.map(image => image.name).concat(response.files.map(file => file.name));
+    await fs.writeFile(
+      path.join(destination, "manifest.json"),
+      JSON.stringify(manifestTemplate, null, 2)
+    );
+
     console.log("Favicons generated successfully!");
   } catch (error) {
     console.error("Error generating favicons:", error.message);
