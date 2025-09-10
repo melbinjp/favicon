@@ -1,9 +1,9 @@
-const { favicons } = require("favicons");
+const favicons = require("favicons");
 const fs = require("fs-extra");
 const path = require("path");
 
 const source = "src/favicon.svg";
-const destination = "./"; // Output to the root directory
+const destination = "./dist"; // Output to the dist directory
 
 const configuration = {
   path: "/",
@@ -30,11 +30,14 @@ const configuration = {
   },
 };
 
-const run = async () => {
-  try {
-    // Generate favicons
-    const response = await favicons(source, configuration);
+const callback = async (error, response) => {
+  if (error) {
+    console.error("Error generating favicons:", error.message);
+    process.exit(1);
+    return;
+  }
 
+  try {
     // Clean destination directory
     await fs.emptyDir(destination);
 
@@ -63,11 +66,10 @@ const run = async () => {
     );
 
     console.log("Favicons generated successfully!");
-  } catch (error)
-  {
-    console.error("Error generating favicons:", error.message);
+  } catch (err) {
+    console.error("Error writing favicons:", err);
     process.exit(1);
   }
 };
 
-run();
+favicons(source, configuration, callback);
