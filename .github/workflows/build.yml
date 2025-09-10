@@ -1,4 +1,4 @@
-name: Build and Commit Favicons
+name: Build and Deploy Favicons
 
 on:
   push:
@@ -6,8 +6,10 @@ on:
       - main
 
 jobs:
-  build:
+  build_and_deploy:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
 
     steps:
       - name: Checkout code
@@ -27,10 +29,8 @@ jobs:
       - name: Copy README to dist
         run: cp README.gh-pages.md dist/README.md
 
-      - name: Commit changes
-        uses: stefanzweifel/git-auto-commit-action@v4
+      - name: Deploy to gh-pages
+        uses: peaceiris/actions-gh-pages@v4
         with:
-          commit_message: 'Chore: Regenerate favicons'
-          branch: gh-pages
-          file_pattern: 'dist/*'
-          create_branch: true
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./dist
