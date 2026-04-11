@@ -1,84 +1,56 @@
-# Favicon Assets for My Awesome Website
+# Favicon Assets for We Can Use AI
 
-This repository contains the favicon assets for my awesome website.
+This repository contains the favicon assets for [We Can Use AI](https://wecanuseai.com), served via GitHub Pages at **https://favicon.wecanuseai.com**.
 
 ## 🚀 Usage
 
-To use these favicons, add the following lines to the `<head>` section of your HTML document. Make sure to replace `https://raw.githubusercontent.com/melbinjp/favicon/gh-pages/` with the actual path to your favicon files.
+Add the following lines to the `<head>` section of your HTML document:
 
 ```html
-<link rel="icon" type="image/x-icon" href="https://raw.githubusercontent.com/melbinjp/favicon/gh-pages/favicon.ico">
-<link rel="icon" type="image/png" sizes="16x16" href="https://raw.githubusercontent.com/melbinjp/favicon/gh-pages/favicon-16x16.png">
-<link rel="icon" type="image/png" sizes="32x32" href="https://raw.githubusercontent.com/melbinjp/favicon/gh-pages/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="48x48" href="https://raw.githubusercontent.com/melbinjp/favicon/gh-pages/favicon-48x48.png">
-<link rel="manifest" href="https://raw.githubusercontent.com/melbinjp/favicon/gh-pages/manifest.webmanifest">
+<link rel="icon" type="image/x-icon" href="https://favicon.wecanuseai.com/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="https://favicon.wecanuseai.com/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://favicon.wecanuseai.com/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="48x48" href="https://favicon.wecanuseai.com/favicon-48x48.png">
+<link rel="manifest" href="https://favicon.wecanuseai.com/manifest.webmanifest">
 <meta name="mobile-web-app-capable" content="yes">
 <meta name="theme-color" content="#667eea">
 <meta name="application-name" content="We Can Use AI">
-<link rel="apple-touch-icon" sizes="57x57" href="https://raw.githubusercontent.com/melbinjp/favicon/gh-pages/apple-touch-icon-57x57.png">
-<link rel="apple-touch-icon" sizes="60x60" href="https://raw.githubusercontent.com/melbinjp/favicon/gh-pages/apple-touch-icon-60x60.png">
-<link rel="apple-touch-icon" sizes="72x72" href="https://raw.githubusercontent.com/melbinjp/favicon/gh-pages/apple-touch-icon-72x72.png">
-<link rel="apple-touch-icon" sizes="76x76" href="https://raw.githubusercontent.com/melbinjp/favicon/gh-pages/apple-touch-icon-76x76.png">
-<link rel="apple-touch-icon" sizes="114x114" href="https://raw.githubusercontent.com/melbinjp/favicon/gh-pages/apple-touch-icon-114x114.png">
-<link rel="apple-touch-icon" sizes="120x120" href="https://raw.githubusercontent.com/melbinjp/favicon/gh-pages/apple-touch-icon-120x120.png">
-<link rel="apple-touch-icon" sizes="144x144" href="https://raw.githubusercontent.com/melbinjp/favicon/gh-pages/apple-touch-icon-144x144.png">
-<link rel="apple-touch-icon" sizes="152x152" href="https://raw.githubusercontent.com/melbinjp/favicon/gh-pages/apple-touch-icon-152x152.png">
-<link rel="apple-touch-icon" sizes="167x167" href="https://raw.githubusercontent.com/melbinjp/favicon/gh-pages/apple-touch-icon-167x167.png">
-<link rel="apple-touch-icon" sizes="180x180" href="https://raw.githubusercontent.com/melbinjp/favicon/gh-pages/apple-touch-icon-180x180.png">
-<link rel="apple-touch-icon" sizes="1024x1024" href="https://raw.githubusercontent.com/melbinjp/favicon/gh-pages/apple-touch-icon-1024x1024.png">
+<link rel="apple-touch-icon" sizes="57x57" href="https://favicon.wecanuseai.com/apple-touch-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="https://favicon.wecanuseai.com/apple-touch-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="https://favicon.wecanuseai.com/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="https://favicon.wecanuseai.com/apple-touch-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="https://favicon.wecanuseai.com/apple-touch-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="https://favicon.wecanuseai.com/apple-touch-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="https://favicon.wecanuseai.com/apple-touch-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="https://favicon.wecanuseai.com/apple-touch-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="167x167" href="https://favicon.wecanuseai.com/apple-touch-icon-167x167.png">
+<link rel="apple-touch-icon" sizes="180x180" href="https://favicon.wecanuseai.com/apple-touch-icon-180x180.png">
+<link rel="apple-touch-icon" sizes="1024x1024" href="https://favicon.wecanuseai.com/apple-touch-icon-1024x1024.png">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 <meta name="apple-mobile-web-app-title" content="wecanuseai">
 <meta name="msapplication-TileColor" content="#667eea">
-<meta name="msapplication-TileImage" content="https://raw.githubusercontent.com/melbinjp/favicon/gh-pages/mstile-144x144.png">
-<meta name="msapplication-config" content="https://raw.githubusercontent.com/melbinjp/favicon/gh-pages/browserconfig.xml">
+<meta name="msapplication-TileImage" content="https://favicon.wecanuseai.com/mstile-144x144.png">
+<meta name="msapplication-config" content="https://favicon.wecanuseai.com/browserconfig.xml">
 ```
 
 ## 📦 GitHub Pages
 
-The generated favicons are automatically committed to the `gh-pages` branch. You can use this branch to serve the favicons directly from GitHub Pages.
+On every push to `main`, the workflow builds the favicons and deploys the `dist/` folder to the `gh-pages` branch, which is served via GitHub Pages at **https://favicon.wecanuseai.com**.
 
-The URL for the favicons will be: `https://raw.githubusercontent.com/melbinjp/favicon/gh-pages/`
+The root URL (`https://favicon.wecanuseai.com/`) serves an `index.html` with a copy-paste snippet and a full file listing. The machine-readable manifest is at `https://favicon.wecanuseai.com/favicons.json`.
 
 ## 📁 Files
 
-All the generated files are in the `dist` directory. The following files are generated:
+All the generated files are deployed to the `gh-pages` branch. Key files include:
 
-- `android-chrome-144x144.png`
-- `android-chrome-192x192.png`
-- `android-chrome-256x256.png`
-- `android-chrome-36x36.png`
-- `android-chrome-384x384.png`
-- `android-chrome-48x48.png`
-- `android-chrome-512x512.png`
-- `android-chrome-72x72.png`
-- `android-chrome-96x96.png`
-- `apple-touch-icon-1024x1024.png`
-- `apple-touch-icon-114x114.png`
-- `apple-touch-icon-120x120.png`
-- `apple-touch-icon-144x144.png`
-- `apple-touch-icon-152x152.png`
-- `apple-touch-icon-167x167.png`
-- `apple-touch-icon-180x180.png`
-- `apple-touch-icon-57x57.png`
-- `apple-touch-icon-60x60.png`
-- `apple-touch-icon-72x72.png`
-- `apple-touch-icon-76x76.png`
-- `apple-touch-icon-precomposed.png`
-- `apple-touch-icon.png`
-- `browserconfig.xml`
-- `favicon-16x16.png`
-- `favicon-32x32.png`
-- `favicon-48x48.png`
-- `favicon.ico`
-- `favicon.svg`
-- `favicons.json`
-- `manifest.webmanifest`
-- `mstile-144x144.png`
-- `mstile-150x150.png`
-- `mstile-310x150.png`
-- `mstile-310x310.png`
-- `mstile-70x70.png`
+- `favicon.ico`, `favicon.svg`, `favicon-16x16.png`, `favicon-32x32.png`, `favicon-48x48.png`
+- `apple-touch-icon.png` (and sized variants: 57×57 → 1024×1024)
+- `apple-touch-startup-image-*.png` (iOS splash screens, various resolutions)
+- `android-chrome-*.png` (36×36 → 512×512)
+- `mstile-*.png` + `browserconfig.xml` (Windows tiles)
+- `yandex-browser-50x50.png` + `yandex-browser-manifest.json`
+- `manifest.webmanifest`, `favicons.json`, `manifest.json`
 
 ## 💻 Development
 
