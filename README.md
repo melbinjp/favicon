@@ -1,6 +1,6 @@
 # Favicon Assets for We Can Use AI
 
-This repository contains the favicon assets for [We Can Use AI](https://wecanuseai.com), served via GitHub Pages at **https://favicon.wecanuseai.com**.
+Reusable favicon asset service for [We Can Use AI](https://wecanuseai.com) websites, with generated web, mobile, and manifest assets.
 
 ## 🚀 Usage
 
