@@ -41,6 +41,20 @@ const run = async () => {
     // Copy original favicon
     await fs.copyFile(source, path.join(destination, "favicon.svg"));
 
+    // Copy hand-made brand assets through untouched. The favicons library only produces
+    // icon sizes; a fixed-shape asset such as the 320x132 Google Workspace logo has to be
+    // made by hand and simply carried. It cannot live in the repo root - dist/ is emptied
+    // and rebuilt every run, so only what this script writes is ever served.
+    const extrasDir = "src/extras";
+    const extras = (await fs.pathExists(extrasDir))
+      ? (await fs.readdir(extrasDir)).sort()
+      : [];
+    await Promise.all(
+      extras.map((name) =>
+        fs.copyFile(path.join(extrasDir, name), path.join(destination, name))
+      )
+    );
+
     // Write images and files
     await Promise.all(
       response.images.map(async (image) =>
@@ -76,6 +90,7 @@ const run = async () => {
     // Create index.html landing page
     const baseUrl = "https://favicon.wecanuseai.com";
     const allFiles = ["favicon.svg"]
+      .concat(extras)
       .concat(response.images.map(i => i.name))
       .concat(response.files.map(f => f.name))
       .sort();
